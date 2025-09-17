@@ -122,40 +122,40 @@ const page = () => {
             <p className="mt-5">
               <strong>Duration: </strong>2 Years
             </p>
-            <hr className="text-blue-200" />
+            <hr className="mt=2 text-[#0a639f]" />
             <div className="h-6"></div>
             <p>
               <strong>Certificate: </strong>Both National Diploma and
               Professional Diploma.
             </p>
-            <hr className="text-blue-200" />
+            <hr className="mt-2 text-[#0a639f]" />
             <div className="h-6"></div>
             <p>
               <strong>Skills: </strong>Academic Institution recognized skills
               and In-demand professional skills.
             </p>
-            <hr className="text-blue-200" />
+            <hr className="mt-2 text-[#0a639f]" />
             <div className="h-6"></div>
             <p>
               <strong>Entry Requirements: </strong>120 min in JAMB, 5 Credits in
               O-Level and Your passion
             </p>
-            <hr className="text-blue-200" />
+            <hr className="mt-2 text-[#0a639f]" />
             <div className="h-6"></div>
             <p>
               <strong>Required Hardware: </strong>(usually Laptop)
             </p>
-            <hr className="text-blue-200" />
+            <hr className="mt-2 text-[#0a639f]" />
             <div className="h-6"></div>
             <p>
               <strong>Direct Entry: </strong>Yes (Any University)
             </p>
-            <hr className="text-blue-200" />
+            <hr className="mt-2 text-[#0a639f]" />
             <div className="h-6"></div>
             <p>
               <strong>Transcript & Internship: </strong>Yes
             </p>
-            <hr className="text-blue-200" />
+            <hr className="mt-2 text-[#0a639f]" />
             <div className="h-6"></div>
             <p>
               <strong>Access to Alumni Network and Opportunities: </strong>Yes
@@ -168,37 +168,37 @@ const page = () => {
             <p className="mt-5">
               <strong>Duration: </strong>1 Years
             </p>
-            <hr className="text-blue-200" />
+            <hr className="mt-2 text-[#0a639f]" />
             <div className="h-6"></div>
             <p>
               <strong>Certificate: </strong>Professional Diploma.
             </p>
-            <hr className="text-blue-200" />
+            <hr className="mt-2 text-[#0a639f]" />
             <div className="h-6"></div>
             <p>
               <strong>Skills: </strong>In-demand professional skills
             </p>
-            <hr className="text-blue-200" />
+            <hr className="mt-2 text-[#0a639f]" />
             <div className="h-6"></div>
             <p>
               <strong>Entry Requirements: </strong>Your passion
             </p>
-            <hr className="text-blue-200" />
+            <hr className="mt-2 text-[#0a639f]" />
             <div className="h-6"></div>
             <p>
               <strong>Required Hardware: </strong>(usually Laptop)
             </p>
-            <hr className="text-blue-200" />
+            <hr className="mt-2 text-[#0a639f]" />
             <div className="h-6"></div>
             <p>
               <strong>Direct Entry: </strong>Partially Yes (LAUTECH ODL)
             </p>
-            <hr className="text-blue-200" />
+            <hr className="mt-2 text-[#0a639f]" />
             <div className="h-6"></div>
             <p>
               <strong>Transcript & Internship: </strong>Yes
             </p>
-            <hr className="text-blue-200" />
+            <hr className="mt-2 text-[#0a639f]" />
             <div className="h-6"></div>
             <p>
               <strong>Access to Alumni Network and Opportunities: </strong>Yes
@@ -211,37 +211,37 @@ const page = () => {
             <p className="mt-5">
               <strong>Duration: </strong>2 weeks to 10 months
             </p>
-            <hr className="text-blue-200" />
+            <hr className="mt-2 text-[#0a639f]" />
             <div className="h-6"></div>
             <p>
               <strong>Certificate: </strong>Certificate Program
             </p>
-            <hr className="text-blue-200" />
+            <hr className="mt-2 text-[#0a639f]" />
             <div className="h-6"></div>
             <p>
               <strong>Skills: </strong>In-demand professional skills
             </p>
-            <hr className="text-blue-200" />
+            <hr className="mt-2 text-[#0a639f]" />
             <div className="h-6"></div>
             <p>
               <strong>Entry Requirements: </strong>Your passion
             </p>
-            <hr className="text-blue-200" />
+            <hr className="mt-2 text-[#0a639f]" />
             <div className="h-6"></div>
             <p>
               <strong>Required Hardware: </strong>(usually Laptop)
             </p>
-            <hr className="text-blue-200" />
+            <hr className="mt-2 text-[#0a639f]" />
             <div className="h-6"></div>
             <p>
               <strong>Direct Entry: </strong>No
             </p>
-            <hr className="text-blue-200" />
+            <hr className="mt-2 text-[#0a639f]" />
             <div className="h-6"></div>
             <p>
               <strong>Transcript & Internship: </strong>No
             </p>
-            <hr className="text-blue-200" />
+            <hr className="mt-2 text-[#0a639f]" />
             <div className="h-6"></div>
             <p>
               <strong>Access to Alumni Network and Opportunities: </strong>Yes
@@ -497,8 +497,8 @@ const page = () => {
           </div>
           <div className="flex flex-3 mt-20 items-center justify-between">
             <div>
-              <div className="flex items-center">
-                <Image src={""} alt="" />
+              <div className="flex items-center justify-center">
+                {/* <Image src="" alt="" width={20} height={10} /> */}
               </div>
               <div className="flex items-center">
                 <span>SQI College of ICT IBADAN</span>
@@ -519,8 +519,133 @@ const page = () => {
                 </Link>
               </div>
             </div>
-            <div className="bg-white w-50"></div>
-            <div></div>
+            <div className="flex flex-2 space-x-7 text-wrap">
+              <div className="bg-gray-50 p-3 w-100 flex flex-col">
+                <div className="flex space-x-3">
+                  <Image
+                    src="/images/mr_seyi.png"
+                    alt="Mr. seyi"
+                    width={50}
+                    height={5}
+                  />
+                  <div>
+                    <Link href={""} className="text-blue-500">
+                      Oluwaseyi Odekomaya
+                    </Link>
+                    <div className="text-gray-500">4 years ago</div>
+                  </div>
+                </div>
+                <span className="mt-5 text-wrap text-gray-500">
+                  I’ve compared other platforms to this one to be honest and
+                  they don’t measure up. The platforms that give a comparable
+                  level of the quality of skills cost a lot more and don’t even
+                  offer a guarantee of access to real world project and
+                  situations... The ones available at a cheaper price so to say
+                  do not give a level of quality even close to it... Some
+                  platforms charge a lot more and yet still falter in the
+                  delivery of good contents... Another aspect that I noticed in
+                  comparison is that instructors at SQI College of ICT are
+                  actually interested in ensuring their students understand what
+                  they are learning. They take joy in ensuring the students
+                  comprehend and are able to apply what is being taught and
+                  explain in the simplest ways possible to ensure maximum
+                  comprehension.... I’m not sharing this because I have any
+                  affiliation with SQI College of ICT, I’m doing so because it’s
+                  simply the truth. If anyone else tries to make their research,
+                  they will find out that it’s true too.
+                </span>
+              </div>
+              <div className="bg-gray-50 p-3 w-100 flex flex-col">
+                <div className="flex space-x-3">
+                  <Image
+                    src="/images/mr_seyi.png"
+                    alt="Mr. seyi"
+                    width={50}
+                    height={5}
+                  />
+                  <div>
+                    <Link href={""} className="text-blue-500">
+                      Emmanuel Toluwanimi
+                    </Link>
+                    <div className="text-gray-500">4 years ago</div>
+                  </div>
+                </div>
+                <span className="mt-5 text-gray-500">
+                  SQI is one of the things I’m thankful for in my life. I’ve
+                  spent six months in SQI and I can say it’s one of the best
+                  moments in my life. The staffs are accommodating and very
+                  excellent at their job. The tutors don’t just teach, they
+                  mentor students. They make coding fun and understandable for
+                  learners. I’m able to achieve a lot enrolling with them. I’ve
+                  been able to build amazing web projects under their tutelage.
+                  ENROLL WITH SQI AND YOU WILL BE PROUD YOU DID.
+                </span>
+              </div>
+              <div className="bg-gray-50 p-3 w-100  flex flex-col">
+                <div className="flex space-x-3">
+                  <Image
+                    src="/images/mr_seyi.png"
+                    alt="Mr. seyi"
+                    width={50}
+                    height={5}
+                  />
+                  <div>
+                    <Link href={""} className="text-blue-500">
+                      Oladimeji Sodeeq
+                    </Link>
+                    <div className="text-gray-500">4 years ago</div>
+                  </div>
+                </div>
+                <span className="mt-5 text-gray-500">
+                  It’s an awesome place to learn. It has a serene environment,
+                  the tutors are friendly and very explanatory. I really love
+                  the place
+                </span>
+              </div>
+              <div className="bg-gray-50 p-3 w-100  flex flex-col">
+                <div className="flex space-x-3">
+                  <Image
+                    src="/images/mr_seyi.png"
+                    alt="Mr. seyi"
+                    width={50}
+                    height={5}
+                  />
+                  <div>
+                    <Link href={""} className="text-blue-500">
+                      Cherish Ordia
+                    </Link>
+                    <div className="text-gray-500">4 years ago</div>
+                  </div>
+                </div>
+                <span className="mt-5 text-gray-500">
+                  It is a great place to learn. It is a condusive environment
+                  filled with loving and patient teachers,a wonderful and
+                  admirable manager and supportive and cheerful students. For
+                  the past month have been here, it’s been great
+                </span>
+              </div>
+              <div className="bg-gray-50 p-3 w-100  flex flex-col">
+                <div className="flex space-x-3">
+                  <Image
+                    src="/images/mr_seyi.png"
+                    alt="Mr. seyi"
+                    width={50}
+                    height={5}
+                  />
+                  <div>
+                    <Link href={""} className="text-blue-500">
+                      Omolola Omolabake
+                    </Link>
+                    <div className="text-gray-500">4 years ago</div>
+                  </div>
+                </div>
+                <span className="mt-5 text-gray-500">
+                  Thank u SQI for making me believe more in myself, thanks for
+                  bringing out some qualities that I’ll never think of years to
+                  come in my life. My heart is full of gratitude
+                </span>
+              </div>
+            </div>
           </div>
         </div>
         <div className="mt-20 px-30">
