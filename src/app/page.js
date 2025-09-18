@@ -1,10 +1,60 @@
-import React from "react";
+"use client";
+
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 
-const page = () => {
+const testimonials = [
+  {
+    image: "/images/mr_seyi.png",
+    name: "Oluwaseyi Odekomaya",
+    time: "4 years ago",
+    text: "I’ve compared other platforms to this one to be honest and they don’t measure up. The platforms that give a comparable level of the quality of skills cost a lot more and don’t even offer a guarantee of access to real world project and situations... The ones available at a cheaper price so to say do not give a level of quality even close to it... Some platforms charge a lot more and yet still falter in the delivery of good contents...",
+  },
+  {
+    image: "/images/rocket.png",
+    name: "Emmanuel Toluwanimi",
+    time: "4 years ago",
+    text: "SQI is one of the things I’m thankful for in my life. I’ve spent six months in SQI and I can say it’s one of the best moments in my life. The staffs are accommodating and very excellent at their job. The tutors don’t just teach, they mentor students. They make coding fun and understandable for learners. I’m able to achieve a lot enrolling with them.",
+  },
+  {
+    image: "/images/avatar.png",
+    name: "Oladimeji Sodeeq",
+    time: "4 years ago",
+    text: "It’s an awesome place to learn. It has a serene environment, the tutors are friendly and very explanatory. I really love the place.",
+  },
+  {
+    image: "/images/cherish.png",
+    name: "Cherish Ordia",
+    time: "4 years ago",
+    text: "It is a great place to learn. It is a conducive environment filled with loving and patient teachers, a wonderful and admirable manager and supportive and cheerful students.",
+  },
+  {
+    image: "/images/omolola.png",
+    name: "Omolola Omolabake",
+    time: "4 years ago",
+    text: "Thank u SQI for making me believe more in myself, thanks for bringing out some qualities that I’ll never think of years to come in my life. My heart is full of gratitude.",
+  },
+];
+
+const Page = () => {
+  const [index, setIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setIndex((pre) => (pre + 2) % testimonials.length);
+    }, 9000);
+
+    return () => clearInterval(interval);
+  }, []);
+
+  const visibleSlides = [
+    testimonials[index],
+    testimonials[(index + 1) % testimonials.length],
+  ];
+
   return (
     <>
       <Navbar />
@@ -21,7 +71,7 @@ const page = () => {
             <div className="mt-20">
               <Link
                 href=""
-                className="capitalize p-5 bg-[#001a6e] rounded-full "
+                className="capitalize py-5 px-9 bg-[#001a6e] rounded-3xl "
               >
                 start now
               </Link>
@@ -58,7 +108,7 @@ const page = () => {
             <div className="mt-5">
               <Link
                 href={""}
-                className="underline underline-offset-10 text-blue-200 text-lg"
+                className="underline underline-offset-10 text-blue-500 text-lg"
               >
                 learn more
               </Link>
@@ -83,7 +133,7 @@ const page = () => {
             <div className="mt-5">
               <Link
                 href={""}
-                className="underline underline-offset-10 text-blue-200 text-lg"
+                className="underline underline-offset-10 text-blue-500 text-lg"
               >
                 learn more
               </Link>
@@ -107,7 +157,7 @@ const page = () => {
             <div className="mt-5">
               <Link
                 href={""}
-                className="underline underline-offset-10 text-blue-200 text-lg"
+                className="underline underline-offset-10 text-blue-500 text-lg"
               >
                 learn more
               </Link>
@@ -280,7 +330,7 @@ const page = () => {
                 Twitter, Facebook) and many more are created by software
                 engineers.
               </p>
-              <Link href={""}>learn more</Link>
+              <Link href={""} className="underline underline-offset-10 text-blue-500 text-lg">learn more</Link>
             </div>
             <div className="bg-[#483b23] rounded-3xl p-15 space-y-5">
               <Image
@@ -303,7 +353,7 @@ const page = () => {
                 design professionals. up with lessons, mentorship sessions, and
                 career advice from our
               </p>
-              <Link href={""}>learn more</Link>
+              <Link href={""} className="underline underline-offset-10 text-blue-500 text-lg">learn more</Link>
             </div>
           </div>
           <div className="space-y-15 mt-[-30]">
@@ -325,7 +375,7 @@ const page = () => {
                 and marketing tactics because everyone now depends on data to
                 formulate improved strategies for the future of their companies.
               </p>
-              <Link href={""}>learn more</Link>
+              <Link href={""} className="underline underline-offset-10 text-blue-500 text-lg">learn more</Link>
             </div>
             <div className="bg-[#2a2e30] rounded-3xl p-15 space-y-5">
               <Image
@@ -350,7 +400,7 @@ const page = () => {
                 fits into our modern society and knows how to navigate a variety
                 of computing environments.
               </p>
-              <Link href={""}>learn more</Link>
+              <Link href={""} className="underline underline-offset-10 text-blue-500 text-lg">learn more</Link>
             </div>
           </div>
         </div>
@@ -495,15 +545,15 @@ const page = () => {
               SQI experience.
             </p>
           </div>
-          <div className="flex flex-3 mt-20 items-center justify-between">
-            <div>
-              <div className="flex items-center justify-center">
-                {/* <Image src="" alt="" width={20} height={10} /> */}
+          <div className="flex flex-3 mt-20 items-center space-x-10 justify-between">
+            <div className="w-100 flex flex-col items-center justify-center">
+              <div className="flex overflow-hidden">
+                <Image src="/images/sqi_students.jpg" alt="Students" width={50} height={20} className="rounded-full" />
               </div>
-              <div className="flex items-center">
+              <div className="flex items-center text-center">
                 <span>SQI College of ICT IBADAN</span>
               </div>
-              <div className="items-center flex">4.9</div>
+              <div className="items-center flex text-amber-400 font-bold text-2xl">4.9</div>
               <div className="text-gray-500">Based on 84 reviews</div>
               <div className="text-gray-500 flex items-center">
                 powered by <span className="text-blue-500">G</span>
@@ -519,131 +569,33 @@ const page = () => {
                 </Link>
               </div>
             </div>
-            <div className="flex flex-2 space-x-7 text-wrap">
-              <div className="bg-gray-50 p-3 w-100 flex flex-col">
-                <div className="flex space-x-3">
-                  <Image
-                    src="/images/mr_seyi.png"
-                    alt="Mr. seyi"
-                    width={50}
-                    height={5}
-                  />
-                  <div>
-                    <Link href={""} className="text-blue-500">
-                      Oluwaseyi Odekomaya
-                    </Link>
-                    <div className="text-gray-500">4 years ago</div>
+            <div className="w-full max-w-5xl mx-auto overflow-hidden">
+              <div className="flex space-x-6 transition-transform duration-700">
+                {visibleSlides.map((item, i) => (
+                  <div
+                    key={i}
+                    className="bg-white p-5 w-100 rounded-lg shadow flex flex-col"
+                  >
+                    <div className="flex space-x-3">
+                      <Image
+                        src={item.image}
+                        alt={item.name}
+                        width={50}
+                        height={50}
+                        className="rounded-full"
+                      />
+                      <div>
+                        <Link href="#" className="text-blue-500 font-semibold">
+                          {item.name}
+                        </Link>
+                        <div className="text-gray-500 text-sm">{item.time}</div>
+                      </div>
+                    </div>
+                    <p className="mt-4 text-gray-600 h-50 overflow-y-auto">
+                      {item.text}
+                    </p>
                   </div>
-                </div>
-                <span className="mt-5 text-wrap text-gray-500">
-                  I’ve compared other platforms to this one to be honest and
-                  they don’t measure up. The platforms that give a comparable
-                  level of the quality of skills cost a lot more and don’t even
-                  offer a guarantee of access to real world project and
-                  situations... The ones available at a cheaper price so to say
-                  do not give a level of quality even close to it... Some
-                  platforms charge a lot more and yet still falter in the
-                  delivery of good contents... Another aspect that I noticed in
-                  comparison is that instructors at SQI College of ICT are
-                  actually interested in ensuring their students understand what
-                  they are learning. They take joy in ensuring the students
-                  comprehend and are able to apply what is being taught and
-                  explain in the simplest ways possible to ensure maximum
-                  comprehension.... I’m not sharing this because I have any
-                  affiliation with SQI College of ICT, I’m doing so because it’s
-                  simply the truth. If anyone else tries to make their research,
-                  they will find out that it’s true too.
-                </span>
-              </div>
-              <div className="bg-gray-50 p-3 w-100 flex flex-col">
-                <div className="flex space-x-3">
-                  <Image
-                    src="/images/mr_seyi.png"
-                    alt="Mr. seyi"
-                    width={50}
-                    height={5}
-                  />
-                  <div>
-                    <Link href={""} className="text-blue-500">
-                      Emmanuel Toluwanimi
-                    </Link>
-                    <div className="text-gray-500">4 years ago</div>
-                  </div>
-                </div>
-                <span className="mt-5 text-gray-500">
-                  SQI is one of the things I’m thankful for in my life. I’ve
-                  spent six months in SQI and I can say it’s one of the best
-                  moments in my life. The staffs are accommodating and very
-                  excellent at their job. The tutors don’t just teach, they
-                  mentor students. They make coding fun and understandable for
-                  learners. I’m able to achieve a lot enrolling with them. I’ve
-                  been able to build amazing web projects under their tutelage.
-                  ENROLL WITH SQI AND YOU WILL BE PROUD YOU DID.
-                </span>
-              </div>
-              <div className="bg-gray-50 p-3 w-100  flex flex-col">
-                <div className="flex space-x-3">
-                  <Image
-                    src="/images/mr_seyi.png"
-                    alt="Mr. seyi"
-                    width={50}
-                    height={5}
-                  />
-                  <div>
-                    <Link href={""} className="text-blue-500">
-                      Oladimeji Sodeeq
-                    </Link>
-                    <div className="text-gray-500">4 years ago</div>
-                  </div>
-                </div>
-                <span className="mt-5 text-gray-500">
-                  It’s an awesome place to learn. It has a serene environment,
-                  the tutors are friendly and very explanatory. I really love
-                  the place
-                </span>
-              </div>
-              <div className="bg-gray-50 p-3 w-100  flex flex-col">
-                <div className="flex space-x-3">
-                  <Image
-                    src="/images/mr_seyi.png"
-                    alt="Mr. seyi"
-                    width={50}
-                    height={5}
-                  />
-                  <div>
-                    <Link href={""} className="text-blue-500">
-                      Cherish Ordia
-                    </Link>
-                    <div className="text-gray-500">4 years ago</div>
-                  </div>
-                </div>
-                <span className="mt-5 text-gray-500">
-                  It is a great place to learn. It is a condusive environment
-                  filled with loving and patient teachers,a wonderful and
-                  admirable manager and supportive and cheerful students. For
-                  the past month have been here, it’s been great
-                </span>
-              </div>
-              <div className="bg-gray-50 p-3 w-100  flex flex-col">
-                <div className="flex space-x-3">
-                  <Image
-                    src="/images/mr_seyi.png"
-                    alt="Mr. seyi"
-                    width={50}
-                    height={5}
-                  />
-                  <div>
-                    <Link href={""} className="text-blue-500">
-                      Omolola Omolabake
-                    </Link>
-                    <div className="text-gray-500">4 years ago</div>
-                  </div>
-                </div>
-                <span className="mt-5 text-gray-500">
-                  Thank u SQI for making me believe more in myself, thanks for
-                  bringing out some qualities that I’ll never think of years to
-                  come in my life. My heart is full of gratitude
-                </span>
+                ))}
               </div>
             </div>
           </div>
@@ -909,4 +861,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;
