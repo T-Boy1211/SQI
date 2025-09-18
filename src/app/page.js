@@ -71,7 +71,7 @@ const Page = () => {
             <div className="mt-20">
               <Link
                 href=""
-                className="capitalize py-5 px-9 bg-[#001a6e] rounded-3xl "
+                className="capitalize py-5 px-9 bg-[#001a6e] rounded-3xl hover-slide-arrow"
               >
                 start now
               </Link>
@@ -330,7 +330,7 @@ const Page = () => {
                 Twitter, Facebook) and many more are created by software
                 engineers.
               </p>
-              <Link href={""} className="underline underline-offset-10 text-blue-500 text-lg">learn more</Link>
+              <Link href={""} className="underline underline-offset-10 text-blue-500 text-lg">learn more</Link> <Link href={""} className="text-blue-500 text-lg">{">"}</Link>
             </div>
             <div className="bg-[#483b23] rounded-3xl p-15 space-y-5">
               <Image
@@ -353,7 +353,7 @@ const Page = () => {
                 design professionals. up with lessons, mentorship sessions, and
                 career advice from our
               </p>
-              <Link href={""} className="underline underline-offset-10 text-blue-500 text-lg">learn more</Link>
+              <Link href={""} className="underline underline-offset-10 text-blue-500 text-lg">learn more</Link> <Link href={""} className="text-blue-500 text-lg">{">"}</Link>
             </div>
           </div>
           <div className="space-y-15 mt-[-30]">
@@ -375,7 +375,7 @@ const Page = () => {
                 and marketing tactics because everyone now depends on data to
                 formulate improved strategies for the future of their companies.
               </p>
-              <Link href={""} className="underline underline-offset-10 text-blue-500 text-lg">learn more</Link>
+              <Link href={""} className="underline underline-offset-10 text-blue-500 text-lg">learn more</Link> <Link href={""} className="text-blue-500 text-lg">{">"}</Link>
             </div>
             <div className="bg-[#2a2e30] rounded-3xl p-15 space-y-5">
               <Image
@@ -400,7 +400,7 @@ const Page = () => {
                 fits into our modern society and knows how to navigate a variety
                 of computing environments.
               </p>
-              <Link href={""} className="underline underline-offset-10 text-blue-500 text-lg">learn more</Link>
+              <Link href={""} className="underline underline-offset-10 text-blue-500 text-lg">learn more</Link> <Link href={""} className="text-blue-500 text-lg">{">"}</Link>
             </div>
           </div>
         </div>
@@ -529,7 +529,7 @@ const Page = () => {
               <div className="mt-10">
                 <Link
                   href={""}
-                  className="capitalize rounded-full bg-[#001a6e] p-5"
+                  className="capitalize rounded-full bg-[#001a6e] p-5 hover-slide-arrow"
                 >
                   apply now
                 </Link>
@@ -765,8 +765,8 @@ const Page = () => {
             </p>
             <div className="mt-16">
               <Link
-                href={""}
-                className="mb-10 p-5 bg-[#001a6e] rounded-full capitalize"
+                href={""} 
+                className="mb-10 p-5 bg-[#001a6e] rounded-full capitalize hover-slide-arrow"
               >
                 join us today
               </Link>
@@ -780,7 +780,7 @@ const Page = () => {
                 <h2 className="text-4xl font-bold capitalize">latest news</h2>
               </div>
               <div>
-                <Link href={""} className="p-5 bg-[#001a6e] rounded-full">
+                <Link href={""} className="p-5 bg-[#001a6e] rounded-full capitalize text-lg hover-slide-arrow">
                   read more
                 </Link>
               </div>
